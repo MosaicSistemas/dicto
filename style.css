@@ -24,14 +24,14 @@ body {
 }
 
 main {
-    width: 320px;
+    width: 33%;
+    min-width: 320px;
     padding: 10px;
     margin: auto;
 }
 
 main img {
     width: 100px;
-    height: 100px;
     margin-left: calc(50% - 50px);
 }
 
@@ -48,23 +48,26 @@ h2 {
 a {
     text-decoration: none;
 }
-button {
+section {
     background-color: #f8f8f8;
     border: none;
     color: #8c8c8c;
-    padding: 10px;
+    padding: 30px;
+    margin: 20px 0;
     border-radius: 15px;
-    height: 75px;
     display: flex;
     vertical-align: middle;
     text-align: left;
+    transition: 0.3s ease;
+}
+section:hover {
+    border-radius: 45px;
 }
 p {
-    width: 220px;
+    width: 60%;
+    font-size: 20px;
+    padding: 5px 0;
 }
-button > i {
-    font-size: 50px;
-}
-button img {
-    height: 45px;
+section img {
+    width: 100px;
 }
