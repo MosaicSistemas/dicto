@@ -38,12 +38,15 @@ main img {
 h1 {
     text-align: center;
     color: #f8f8f8;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 800;
 }
 
 h2 {
     text-align: center;
     color: #c6c6c6; 
     margin-bottom: 10px;
+    font-family: "Poppins", Sans-serif;
 }
 a {
     text-decoration: none;
