@@ -19,23 +19,8 @@
 body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg, #6408c1, #3371fa);
-    background-size: 400% 400%;
-    position: relative;
-    animation: change 10s ease-in-out infinite;
+    background-color: #f7f7f7;   
 }
-@keyframes change {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
-
 main {
     width: 33%;
     min-width: 320px;
@@ -50,14 +35,14 @@ main img {
 
 h1 {
     text-align: center;
-    color: #f7f7f7;
+    color: #6408c1;
     font-family: "rubik-black", Sans-serif;
     font-weight: 800;
 }
 
 h2 {
     text-align: center;
-    color: #f7f7f7; 
+    color: #6408c1; 
     margin-bottom: 10px;
     font-family: "rubik-light", Sans-serif;
     font-weight: 300;
@@ -66,9 +51,7 @@ a {
     text-decoration: none;
 }
 section {
-    background-color: #f7f7f7;
-    border: none;
-    color: #8c8c8c;
+    color: #fff;
     font-style: "rubik-regular";
     padding: 30px;
     margin: 20px 0;
@@ -77,9 +60,6 @@ section {
     display: flex;
     justify-content: space-between;
     transition: 0.3s ease;
-    background-image: url('img/contato-bg.svg');
-    background-repeat: no-repeat;
-    background-position: 115% -100%; 
 }
 section:hover {
     border-radius: 45px;
@@ -91,6 +71,10 @@ p {
 }
 section img {
     width: 75px;
+}
+
+.fa-arrow-right {
+    font-size: 25px;
 }
 
 section > i {
