@@ -82,29 +82,38 @@ section {
     justify-content: space-between;
     transition: 0.3s ease;
     background-repeat: no-repeat;
-    background-position: 115% -100%; 
+    background-position: right;
+    background-size: 200px; 
 }
 section:hover {
     border-radius: 45px;
 }
 p {
-    width: 60%;
     font-family: "rubik-regular", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     padding: 5px 0;
 }
-section img {
-    width: 75px;
+.fa-arrow-right {
+    font-size: 25px;
+    font-weight: 600;
 }
 
 section > i {
     font-size: 60px;
 }
 
-div {
+div#mosaic {
     text-align: right;
-    color: rgba(255, 255, 255, 0.9);
+    vertical-align: middle;
+    color: #fff;
+    font-size: 15px;
     padding: 10px;
     font-family: "eurofighter";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+div#mosaic > img {
+    height: 15px;
 }
