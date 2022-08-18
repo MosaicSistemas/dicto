@@ -1,4 +1,8 @@
 @font-face {
+    font-family: 'eurofighter';
+    src: format('truetype') url('fontes/eurofighter.ttf');
+}
+@font-face {
     font-family: 'rubik-black';
     src: format('truetype') url('fontes/RUBIK-BLACK.ttf');
 }
@@ -39,7 +43,7 @@ body {
 main {
     width: 33%;
     min-width: 320px;
-    padding: 75px 10px 10px;
+    padding: 50px 10px 10px;
     margin: auto;
 }
 
@@ -69,7 +73,7 @@ section {
     background-color: #f7f7f7;
     border: none;
     color: #8c8c8c;
-    font-style: "rubik-regular";
+    
     padding: 30px;
     margin: 20px 0;
     height: 111px;
@@ -85,7 +89,9 @@ section:hover {
 }
 p {
     width: 60%;
+    font-family: "rubik-regular", sans-serif;
     font-size: 20px;
+    font-weight: 600;
     padding: 5px 0;
 }
 section img {
@@ -93,5 +99,12 @@ section img {
 }
 
 section > i {
-    font-size: 50px;
+    font-size: 60px;
+}
+
+div {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    font-family: "eurofighter";
 }
