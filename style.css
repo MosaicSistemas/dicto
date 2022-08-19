@@ -97,6 +97,8 @@ p {
 .fa-arrow-right {
     font-size: 25px;
     font-weight: 600;
+    height: 25px;
+    margin: auto 20px;
 }
 
 section > i {
@@ -104,6 +106,10 @@ section > i {
     height: fit-content;
     margin: auto 0;
     justify-self: flex-end;
+}
+section div {
+    width: 100%;
+    display: flex;
 }
 
 div#mosaic {
@@ -119,4 +125,17 @@ div#mosaic {
 }
 div#mosaic > img {
     height: 15px;
+}
+
+.mode {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 25px;
 }
