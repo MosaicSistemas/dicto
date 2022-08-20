@@ -3,10 +3,10 @@ body {
 }
 
 #contato, #whatsapp {
-    background-color: var(--azul_2);
+    background-color: var(--roxo);
     color: var(--branco);
 }
 #portifolio, #email {
-    background-color: var(--azul_1);
+    background-color: var(--roxo);
     color: var(--branco);
 }
