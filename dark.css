@@ -1,0 +1,12 @@
+body {
+    background-color: var(--roxo_escuro);
+}
+
+#contato, #whatsapp {
+    background-color: var(--azul_2);
+    color: var(--branco);
+}
+#portifolio, #email {
+    background-color: var(--azul_1);
+    color: var(--branco);
+}

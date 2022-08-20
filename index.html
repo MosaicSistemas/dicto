@@ -7,13 +7,14 @@
 
     <script src="https://kit.fontawesome.com/f6be5bb26b.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css" id="style">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="light.css" id="mode">
     <link rel="shortcut icon" href="img/icone.ico" type="image/x-icon">
-    <script src="mode.js"></script>
+    
     <title>Dicto</title>
 </head>
 <body>
-    <button class="mode">
+    <button id="mode" onclick="change_mode()">
         <i class="fas fa-adjust"></i>
     </button>
     <main>
@@ -22,7 +23,7 @@
         <h2>Reinvente hoje, Inove amanhã. Seja Dicto</h2>
         
         <a href="contatos.html">
-            <section>
+            <section id="contato">
                 <div>
                     <p>
                         Entre em <br>
@@ -34,7 +35,7 @@
             </section>
         </a>
         <a href="https://www.behance.net/dictocompany/">
-            <section>
+            <section id="portifolio">
                 <div>
                     <p>
                         Nosso <br> 
@@ -51,5 +52,8 @@
         Feito por: Mosaic Sistemas
         <img src="img/logo-mosaic.svg" alt="">
     </div>
+
+    <script src="mode.js"></script>
+
 </body>
 </html>

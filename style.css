@@ -14,7 +14,16 @@
     font-family: 'rubik-light';
     src: format('truetype') url('fontes/RUBIK-LIGHT.ttf');
 }
-
+:root {
+    --roxo_escuro: #320461;
+    --roxo: #6408c1;
+    --azul_1: #3371fa;
+    --azul_2: #2b95fb;
+    --azul_3: #68ddcd;
+    --branco: #f7f7f7;
+    --cinza_1: #c8c8c8;
+    --cinza_2: #8c8c8c;
+}
 * {
     margin: 0;
     padding: 0;
@@ -23,24 +32,8 @@
 body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg, 
-    #6408c1, #6408c1, #3371fa, #2b95fb, #68ddcd);
-    background-size: 400% 400%;
-    position: relative;
-    animation: change 10s ease-in-out infinite;
+    
 }
-@keyframes change {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
-
 main {
     width: 100%;
     min-width: 320px;
@@ -48,7 +41,6 @@ main {
     padding: 50px 10px 10px;
     margin: auto;
 }
-
 main img {
     width: 100px;
     margin-left: calc(50% - 50px);
@@ -56,14 +48,14 @@ main img {
 
 h1 {
     text-align: center;
-    color: #f7f7f7;
+    color: var(--branco);
     font-family: "rubik-black", Sans-serif;
     font-weight: 800;
 }
 
 h2 {
     text-align: center;
-    color: #f7f7f7; 
+    color: var(--branco); 
     margin-bottom: 10px;
     font-family: "rubik-light", Sans-serif;
     font-weight: 300;
@@ -72,9 +64,8 @@ a {
     text-decoration: none;
 }
 section {
-    background-color: #f7f7f7;
     border: none;
-    color: #8c8c8c;
+    color: var(--cinza_2);
     padding: 0 30px;
     margin: 20px 0;
     height: 111px;
@@ -115,7 +106,7 @@ section div {
 div#mosaic {
     text-align: right;
     vertical-align: middle;
-    color: #fff;
+    color: var(--branco);
     font-size: 15px;
     padding: 10px;
     font-family: "eurofighter";
@@ -127,7 +118,8 @@ div#mosaic > img {
     height: 15px;
 }
 
-.mode {
+#mode {
+    color: var(--branco);
     position: absolute;
     top: 0;
     right: 0;
@@ -136,6 +128,10 @@ div#mosaic > img {
     margin: 10px;
     background: none;
     border: none;
-    color: #fff;
+    border-radius: 5px;
     font-size: 25px;
+}
+
+#mode:hover {
+    border: 2px solid var(--branco);
 }

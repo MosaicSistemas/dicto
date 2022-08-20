@@ -8,10 +8,14 @@
     <script src="https://kit.fontawesome.com/f6be5bb26b.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="light.css" id="mode">
     <link rel="shortcut icon" href="img/icone.ico" type="image/x-icon">
     <title>Dicto</title>
 </head>
 <body>
+    <button id="mode" onclick="change_mode()">
+        <i class="fas fa-adjust"></i>
+    </button>
     <main>
         <img src="img/logo.png" alt="">
         <h1>Agência Dicto</h1>
@@ -19,7 +23,7 @@
         
         <a href="https://api.whatsapp.com/send?phone=5522992172113&text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20posso%20ganhar%20mais%20clientes.%F0%9F%92%AB">
             <section>
-                <div>
+                <div id="whatsapp">
                     <p>
                         WhatsApp  
                     </p>
@@ -29,7 +33,7 @@
             </section>
         </a>
         <a href="mailto:suporte.dicto@gmail.com">
-            <section>
+            <section id="email">
                 <div>
                     <p>
                         Email  
@@ -45,5 +49,8 @@
         Feito por: Mosaic Sistemas
         <img src="img/logo-mosaic.svg" alt="">
     </div>
+    
+    <script src="mode.js"></script>
+
 </body>
 </html>

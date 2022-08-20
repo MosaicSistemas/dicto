@@ -1,4 +1,10 @@
-function change_mode (file) {
-    var style = document.getElementById('style')
-    style.setAttribute('href', file + '.css')
+function change_mode () {
+    var style = document.getElementById('mode')
+    var mode = style.getAttribute('href')
+    if (mode == 'light.css') {
+        style.setAttribute('href', 'dark.css')
+    }
+    else if (mode == 'dark.css') {
+        style.setAttribute('href', 'light.css')
+    }
 }
